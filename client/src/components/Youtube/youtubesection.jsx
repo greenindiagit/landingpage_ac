@@ -7,18 +7,19 @@ const VideoSection = () => {
         <div className="row align-items-center">
 
           {/* Video Side */}
-          <div className="col-md-6 mb-4 mb-md-0">
-            <div className="ratio ratio-16x9">
+          <div className="col-lg-6 col-md-12 mb-4">
+            <div className="ratio ratio-16x9 rounded overflow-hidden shadow">
               <iframe
-                src="https://www.youtube.com/watch?v=U-M1oep7kjI"
-                title="YouTube video"
+                src="https://www.youtube.com/embed/U-M1oep7kjI"
+                title="AC Repair Service Video"
                 allowFullScreen
               ></iframe>
             </div>
           </div>
 
           {/* Content Side */}
-          <div className="col-md-6">
+          <div className="col-lg-6 col-md-12 text-center text-lg-start">
+
             <h2 className="fw-bold mb-3">
               Professional AC Repair Service
             </h2>
@@ -36,9 +37,10 @@ const VideoSection = () => {
               <li>✔ 24/7 Customer Support</li>
             </ul>
 
-            <button className="btn btn-primary">
+            <button className="btn btn-primary book-btn">
               Book AC Service
             </button>
+
           </div>
 
         </div>

@@ -33,32 +33,41 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="services py-5 gradient-bg ">
+    <section className="services py-5 gradient-bg">
       <div className="container">
-        <h2 className="text-center mb-3">Our Services</h2>
-        {/* <p className="text-center text-secondary mb-4">
-          We provide complete AC repair and maintenance solutions.
-        </p> */}
 
-        <div className="row g-4">
+        <div className="text-center mb-5">
+          <h2 className="fw-bold">Our Services</h2>
+        </div>
+
+        <div className="row g-4 text-center">
+
           {services.map((service) => (
-            <div key={service.id} className="col-12 col-md-6 col-lg-3">
-              <div className="card h-100 text-center shadow-sm border-0">
+            <div key={service.id} className="col-6 col-md-6 col-lg-3">
+
+              {/* Card only for image */}
+              <div className="card service-card border-0 shadow-sm">
                 <img
                   src={service.img}
                   alt={service.title}
-                  className="card-img-top"
+                  className="card-img-top service-img"
                 />
-                <div className="card-body">
-                  <h5 className="card-title">{service.title}</h5>
-                  <p className="card-text text-secondary">
-                    {service.description}
-                  </p>
-                </div>
               </div>
+
+              {/* Content outside card */}
+              <h5 className="mt-3 fw-bold">
+                {service.title}
+              </h5>
+
+              <p className="text-secondary small">
+                {service.description}
+              </p>
+
             </div>
           ))}
+
         </div>
+
       </div>
     </section>
   );
