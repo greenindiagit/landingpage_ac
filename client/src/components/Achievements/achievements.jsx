@@ -1,0 +1,67 @@
+import React from "react";
+
+const achievements = [
+  {
+    id: 1,
+     img: "/assets/img/achievement/Professionals.png",
+    number: "7000+",
+    text: "Professionals",
+  },
+  {
+    id: 2,
+    img: "/assets/img/achievement/Bookings.png",
+    number: "6M+",
+    text: "Bookings Completed",
+  },
+  {
+    id: 3,
+   img: "/assets/img/achievement/City-states.png",
+    number: "8M+",
+    text: "Cities States",
+  },
+  {
+    id: 4,
+    img: "/assets/img/achievement/Star rating.png",
+    number: "50+",
+    text: "Star Rating",
+  },
+];
+
+const Achievements = () => {
+  return (
+    <section className="achievements py-5 ">
+      <div className="container text-center">
+
+        <h2 className="mb-5 fw-bold">Achievements so far</h2>
+
+        <div className="row g-4">
+
+          {achievements.map((item) => (
+            <div key={item.id} className="col-6 col-md-4 col-lg">
+
+              <div className="achievement-card">
+
+                <div className="icon-circle ">
+                    <img
+                  src={item.img}
+                  alt={item.title}
+                  className="img_icon_achievement"
+                />
+                </div>
+
+                <h3 className="fw-bold mt-3">{item.number}</h3>
+
+                <p className="text-secondary">{item.text}</p>
+
+              </div>
+
+            </div>
+          ))}
+
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Achievements;
