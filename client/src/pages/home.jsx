@@ -31,7 +31,7 @@ function Home() {
       <Testimonials/>
       <ContactUs/>
       <VideoSection/>
-      {/* <Pricing/> */}
+      <Pricing/>
       <FAQ/>
       <BookingForm/>
      <Footer/>

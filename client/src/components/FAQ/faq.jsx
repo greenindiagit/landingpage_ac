@@ -2,25 +2,30 @@ import React from "react";
 
 const faqs = [
   {
-    question: "How can I book an AC service?",
+    question: "बेहतर कूलिंग के लिए AC सर्विस कितनी बार करवानी चाहिए?",
     answer:
-      "You can easily book an AC service through our website by selecting the service and choosing your preferred date and time.",
+      "अच्छी कूलिंग और बेहतर परफॉर्मेंस के लिए AC Service साल में कम से कम 1–2 बार करवानी चाहिए। नियमित AC सर्विस से धूल और गंदगी साफ होती है, बिजली की खपत कम होती है और AC की लाइफ भी बढ़ती है।",
   },
   {
-    question: "Do you provide same-day AC repair service?",
+    question: "प्रोफेशनल AC सर्विस में क्या-क्या शामिल होता है?",
     answer:
-      "Yes, we provide same-day AC repair service in most locations depending on technician availability.",
+      "एक सामान्य AC Service या AC Maintenance में फिल्टर क्लीनिंग, कूलिंग कॉइल की जांच, गैस लेवल चेक करना, ड्रेनेज लाइन की सफाई और पूरी यूनिट का निरीक्षण शामिल होता है। इससे AC सही तरीके से काम करता है और बेहतर कूलिंग देता है।",
   },
   {
-    question: "What brands of AC do you repair?",
+    question: "क्या आप AC Repair और AC Installation की सेवा भी देते हैं?",
     answer:
-      "Our technicians can repair all major AC brands including LG, Samsung, Voltas, Daikin, Hitachi and more.",
+      "हाँ, हम AC Repair, AC Installation और AC Maintenance Service प्रदान करते हैं। हमारे अनुभवी तकनीशियन स्प्लिट AC और विंडो AC दोनों की सर्विस और रिपेयर करते हैं ताकि आपका AC सही तरीके से काम करे।",
   },
   {
-    question: "What is included in AC servicing?",
+    question: "नियमित AC Maintenance क्यों जरूरी है?",
     answer:
-      "AC servicing includes cleaning filters, checking gas pressure, coil cleaning, and overall system inspection.",
+      "नियमित Air Conditioner Maintenance से AC की कूलिंग बेहतर रहती है, अचानक खराब होने की संभावना कम होती है और बिजली की खपत भी कम होती है। साथ ही यह घर की हवा को साफ रखने में मदद करता है।",
   },
+  {
+    question: "AC Service या AC Repair कैसे बुक करें?",
+    answer:
+      "आप हमारी वेबसाइट के माध्यम से आसानी से AC Service या AC Repair Online Book कर सकते हैं। बस अपनी जरूरत की सेवा चुनें, समय तय करें और हमारा तकनीशियन आपके घर पर आकर सर्विस प्रदान करेगा।",
+  }
 ];
 
 const FAQ = () => {
@@ -28,10 +33,6 @@ const FAQ = () => {
     <section className="faq py-5 bg-white">
       <div className="container" style={{ maxWidth: "900px" }}>
         <h2 className="mb-3 text-center">Frequently Asked Questions</h2>
-        <p className="text-secondary text-center mb-4">
-          Find answers to common questions
-        </p>
-
         <div className="accordion" id="faqAccordion">
           {faqs.map((faq, index) => (
             <div className="accordion-item" key={index}>

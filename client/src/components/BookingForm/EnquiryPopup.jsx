@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-
-const BookingForm = () => {
+import { useState, useEffect } from "react";
+const EnquiryPopup = () => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -25,13 +24,8 @@ const BookingForm = () => {
   };
 
   return (
-    <section className="booking py-5 text-center">
-      <div className="container" style={{ maxWidth: "600px" }}>
-        <h2 className="mb-3">Book AC Service</h2>
-        <p className="text-secondary mb-4">Fill the form to schedule your service</p>
-
+      <div className="container">
         <form onSubmit={handleSubmit} className="text-start">
-
           <div className="mb-3">
             <input
               type="text"
@@ -96,12 +90,11 @@ const BookingForm = () => {
           </div>
 
           <button type="submit" className="btn btn-primary w-100">
-           Request for booking
+            Request for booking
           </button>
         </form>
       </div>
-    </section>
   );
 };
 
-export default BookingForm;
+export default EnquiryPopup;

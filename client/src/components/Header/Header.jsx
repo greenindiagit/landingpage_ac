@@ -44,7 +44,7 @@ function Header() {
         <div className="collapse navbar-collapse" id="navbarMenu">
           <ul className="navbar-nav ms-auto">
 
-            <li className="nav-item">
+             <li className="nav-item">
               <a className="nav-link" href="#services">Services</a>
             </li>
 
@@ -60,10 +60,10 @@ function Header() {
               <a className="nav-link" href="#reviews">Reviews</a>
             </li>
 
-            <li className="nav-item ms-3">
-              <a className="btn btn-success" href="#booking">
-                Book Now
-              </a>
+            <li className="nav-item ms-3 fornt_call">
+             
+               +91 80904 00401
+              
             </li>
 
           </ul>

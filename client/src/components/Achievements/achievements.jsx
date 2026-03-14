@@ -4,25 +4,25 @@ const achievements = [
   {
     id: 1,
      img: "/assets/img/achievement/Professionals.png",
-    number: "7000+",
+    number: "100+",
     text: "Professionals",
   },
   {
     id: 2,
     img: "/assets/img/achievement/Bookings.png",
-    number: "6M+",
+    number: "10k+",
     text: "Bookings Completed",
   },
   {
     id: 3,
    img: "/assets/img/achievement/City-states.png",
-    number: "8M+",
+    number: "10+",
     text: "Cities States",
   },
   {
     id: 4,
     img: "/assets/img/achievement/Star rating.png",
-    number: "50+",
+    number: "4.9",
     text: "Star Rating",
   },
 ];
@@ -32,7 +32,7 @@ const Achievements = () => {
     <section className="achievements py-5 ">
       <div className="container text-center">
 
-        <h2 className="mb-5 fw-bold">Achievements so far</h2>
+        <h2 className="mb-5 fw-bold">Performance highlights</h2>
 
         <div className="row g-4">
 

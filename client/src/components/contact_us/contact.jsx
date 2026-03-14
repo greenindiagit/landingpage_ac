@@ -40,7 +40,7 @@ const ContactUs = () => {
     />
   </div>
 
-  <button className="btn btn-danger px-4">
+  <button className="btn btn-success px-4">
     Enquiry Now
   </button>
 
