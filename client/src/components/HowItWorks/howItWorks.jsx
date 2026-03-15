@@ -42,14 +42,14 @@ const HowItWorks = () => {
 
         <div className="row g-4">
           {steps.map((step) => (
-            <div key={step.id} className="col-12 col-md-6 col-lg-3">
+            <div key={step.id} className="col-6 col-md-3 col-lg-3">
               <div className="card h-100 text-center shadow-sm border-0">
                 <div className="card-body">
                   <div className="mb-3" style={{ fontSize: "40px" }}>
                     {step.icon}
                   </div>
                   <h5 className="card-title">{step.title}</h5>
-                  <p className="card-text text-secondary">{step.description}</p>
+                  <p className="card-text d-lg-block d-none text-secondary">{step.description}</p>
                 </div>
               </div>
             </div>

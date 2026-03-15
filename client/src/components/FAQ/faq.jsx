@@ -25,39 +25,73 @@ const faqs = [
     question: "AC Service या AC Repair कैसे बुक करें?",
     answer:
       "आप हमारी वेबसाइट के माध्यम से आसानी से AC Service या AC Repair Online Book कर सकते हैं। बस अपनी जरूरत की सेवा चुनें, समय तय करें और हमारा तकनीशियन आपके घर पर आकर सर्विस प्रदान करेगा।",
-  }
+  },
 ];
 
 const FAQ = () => {
   return (
-    <section className="faq py-5 bg-white">
-      <div className="container" style={{ maxWidth: "900px" }}>
-        <h2 className="mb-3 text-center">Frequently Asked Questions</h2>
-        <div className="accordion" id="faqAccordion">
-          {faqs.map((faq, index) => (
-            <div className="accordion-item" key={index}>
-              <h2 className="accordion-header" id={`heading${index}`}>
-                <button
-                  className={`accordion-button ${index !== 0 ? "collapsed" : ""}`}
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target={`#collapse${index}`}
-                  aria-expanded={index === 0 ? "true" : "false"}
-                  aria-controls={`collapse${index}`}
-                >
-                  {faq.question}
-                </button>
-              </h2>
-              <div
-                id={`collapse${index}`}
-                className={`accordion-collapse collapse ${index === 0 ? "show" : ""}`}
-                aria-labelledby={`heading${index}`}
-                data-bs-parent="#faqAccordion"
-              >
-                <div className="accordion-body">{faq.answer}</div>
-              </div>
+    <section className="faq py-2">
+      <div className="container">
+        <div className="row">
+          {/* FAQ Section */}
+          <div className="col-12 col-md-6">
+            <h2 className="mb-3 text-center fw-bold">Frequently Asked Questions</h2>
+
+            <div className="accordion" id="faqAccordion">
+              {faqs.map((faq, index) => (
+                <div className="accordion-item" key={index}>
+                  <h2 className="accordion-header" id={`heading${index}`}>
+                    <button
+                      className={`accordion-button ${
+                        index !== 0 ? "collapsed" : ""
+                      }`}
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target={`#collapse${index}`}
+                      aria-expanded={index === 0 ? "true" : "false"}
+                      aria-controls={`collapse${index}`}
+                    >
+                      {faq.question}
+                    </button>
+                  </h2>
+
+                  <div
+                    id={`collapse${index}`}
+                    className={`accordion-collapse collapse ${
+                      index === 0 ? "show" : ""
+                    }`}
+                    aria-labelledby={`heading${index}`}
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div className="accordion-body">{faq.answer}</div>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+
+          {/* Service Content */}
+          <div className="col-12 col-md-6 mt-4 mt-md-0">
+            <h2 className="mb-3 text-center fw-bold">
+              AC Service & Repair in Delhi NCR, India
+            </h2>
+
+            <div className="service_in_delhi_ncr justify-content-evenly">
+              <p>
+                Looking for reliable AC Service and Repair in Delhi NCR? Our
+                experienced technicians provide professional servicing for both
+                split AC and window AC to keep your air conditioner running
+                smoothly. We focus on proper cleaning, careful inspection, and
+                accurate repair so your AC delivers better cooling and longer
+                performance. Our technicians arrive with the right tools and
+                follow a professional service process to ensure quality work.
+                Whether you need regular AC servicing, deep cleaning,
+                installation, or repair, our team is ready to help. Book your AC
+                service in Delhi NCR today and enjoy comfortable cooling with
+                professional support you can trust.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

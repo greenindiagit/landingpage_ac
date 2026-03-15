@@ -48,7 +48,7 @@ const WhyChooseUs = () => {
         <div className="row g-4">
 
           {features.map((feature) => (
-            <div key={feature.id} className="col-12 col-sm-6 col-lg-3">
+            <div key={feature.id} className="col-6 col-sm-3 col-lg-3">
 
               <div className="feature-card h-100 text-center p-4">
 
@@ -58,7 +58,7 @@ const WhyChooseUs = () => {
 
                 <h5 className="mb-2">{feature.title}</h5>
 
-                <p className="text-secondary small">
+                <p className="card-text d-lg-block d-none text-secondary">
                   {feature.description}
                 </p>
 

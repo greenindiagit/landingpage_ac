@@ -1,27 +1,47 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import axios from "axios";
+import apis from "../../api/api";
+
 const EnquiryPopup = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    service: "",
-    date: "",
-    address: "",
+const [formData, setFormData] = useState({
+  name: "",
+  phone: "",
+  service: "",
+  date: "",
+  address: "",
+});
+
+const handleChange = (e) => {
+  setFormData({
+    ...formData,
+    [e.target.name]: e.target.value,
   });
+};
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
+  try {
+    console.log("API URL:", apis.enquiry.create);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Booking Data:", formData);
+    const res = await axios.post(apis.enquiry.create, formData);
+
+    console.log(res.data);
+
     alert("Booking Submitted Successfully!");
-    // Optionally reset form:
-    // setFormData({ name: "", phone: "", service: "", date: "", address: "" });
-  };
+
+    setFormData({
+      name: "",
+      phone: "",
+      service: "",
+      date: "",
+      address: "",
+    });
+
+  } catch (error) {
+    console.error("API Error:", error.response?.data || error.message);
+    alert("Something went wrong");
+  }
+};
 
   return (
       <div className="container">

@@ -41,7 +41,7 @@ const SubService = () => {
         <div className="row g-4 text-center">
 
           {features.map((feature) => (
-            <div key={feature.id} className="col-6 col-md-4 col-lg-2">
+            <div key={feature.id} className="col-4 col-md-3 col-lg-2">
 
               <div className="sub-service-card">
 

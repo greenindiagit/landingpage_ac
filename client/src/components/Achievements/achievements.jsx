@@ -37,7 +37,7 @@ const Achievements = () => {
         <div className="row g-4">
 
           {achievements.map((item) => (
-            <div key={item.id} className="col-6 col-md-4 col-lg">
+            <div key={item.id} className="col-3 col-md-3 col-lg">
 
               <div className="achievement-card">
 
@@ -51,7 +51,7 @@ const Achievements = () => {
 
                 <h3 className="fw-bold mt-3">{item.number}</h3>
 
-                <p className="text-secondary">{item.text}</p>
+                <p className="d-lg-block d-none text-secondary">{item.text}</p>
 
               </div>
 

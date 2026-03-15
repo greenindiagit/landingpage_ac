@@ -59,7 +59,7 @@ const Services = () => {
                 {service.title}
               </h5>
 
-              <p className="text-secondary small">
+              <p className="text-secondary small justify-content-start">
                 {service.description}
               </p>
 

@@ -1,10 +1,10 @@
 import express from "express";
-import booking from "./bookingRoutes.js"
+import enquiries from "./enquiryRoutes.js"
 
 
 
 const router = express.Router();
 
-router.use("/booking", booking);
+router.use("/enquiries", enquiries);
 
 export default router;

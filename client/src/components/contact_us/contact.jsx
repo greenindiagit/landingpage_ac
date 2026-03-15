@@ -1,15 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
+import apis from "../../api/api";
 
 const ContactUs = () => {
+
+  const [phone, setPhone] = useState("");
+
+  const handleSubmit = async () => {
+
+    if (!phone) {
+      alert("Please enter mobile number");
+      return;
+    }
+
+    if (phone.length !== 10) {
+      alert("Please enter a valid 10 digit mobile number");
+      return;
+    }
+
+    try {
+      const res = await axios.post(apis.enquiry.create, {
+        phone: phone
+      });
+
+      console.log(res.data);
+
+      alert("Mobile number saved successfully");
+
+      setPhone("");
+
+    } catch (error) {
+      console.error("API Error:", error);
+      alert("Something went wrong");
+    }
+  };
+
   return (
     <section className="gradient_contact_us-bg py-5">
       <div className="container">
         <div className="row align-items-center">
+
           {/* Left Image */}
           <div className="col-md-6 mb-4 mb-md-0">
             <img
-              src="/assets/img/contact_us/Book_Your_AC_Service_Now.png" // Apni image ka path yahan dein
-              alt="Yes Madam Staff"
+              src="/assets/img/contact_us/Book_Your_AC_Service_Now.png"
+              alt="AC Service"
               className="img-fluid"
               style={{
                 borderRadius: "12px",
@@ -22,50 +57,35 @@ const ContactUs = () => {
           {/* Right Content */}
           <div className="col-md-6">
             <h2 className="fw-bold mb-3">Book Your AC Service Now</h2>
+
             <p className="mb-4 text-muted">
               Enter your mobile number for booking and scheduling AC repair,
               service, or installation
             </p>
 
-            {/* Phone input + button */}
-           <div className="d-flex align-items-center gap-2 mb-3 flex-wrap">
+            <div className="d-flex align-items-center gap-2 mb-3 flex-wrap">
 
-  <div className="input-group" style={{ maxWidth: "360px" }}>
-    <span className="input-group-text">IN +91</span>
+              <div className="input-group" style={{ maxWidth: "360px" }}>
+                <span className="input-group-text">IN +91</span>
 
-    <input
-      type="tel"
-      placeholder="Enter Mobile Number"
-      className="form-control m-1"
-    />
-  </div>
-
-  <button className="btn btn-success px-4">
-    Enquiry Now
-  </button>
-
-</div>
-
-            {/* App Store Buttons */}
-            {/* <div className="d-flex gap-3 mb-3 flex-wrap">
-              <a href="#" aria-label="Download on Google Play">
-                <img
-                //   src="/assets/img/contact_us/Book_Your_AC_Service_Now.png"
-                  alt="Google Play Store"
-                //   style={{ height: "50px" }}
+                <input
+                  type="tel"
+                  placeholder="Enter Mobile Number"
+                  className="form-control"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                 />
-              </a>
-              
-            </div> */}
+              </div>
 
-            {/* Small note text */}
-            {/* <p className="text-muted small">
-              Or you can also access our services at{" "}
-              <a href="https://greenindiateam.com/" target="_blank" rel="noreferrer">
-              www.greenindiateam.com
-              </a>{" "}
-              from your mobile phone
-            </p> */}
+              <button
+                className="btn btn-success px-4"
+                onClick={handleSubmit}
+              >
+                Enquiry Now
+              </button>
+
+            </div>
+
           </div>
         </div>
       </div>
