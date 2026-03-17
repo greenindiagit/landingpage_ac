@@ -61,28 +61,28 @@ const Footer = () => {
 
             <ul className="list-unstyled small">
               <li>
-                <a href="https://greenindiateam.com/about-us" className="text-decoration-none">
+                <a href="https://greenindiateam.com/about-us">
                   About Us
                 </a>
               </li>
 
               <li>
-                <a href="https://greenindiateam.com/term-condition" className="text-decoration-none">
+                <a href="https://greenindiateam.com/term-condition">
                  Terms & conditions
                 </a>
               </li>
                <li>
-                <a href="https://greenindiateam.com/privacy-policy" className="text-decoration-none">
+                <a href="https://greenindiateam.com/privacy-policy">
                  Privacy policy
                 </a>
               </li>
                <li>
-                <a href="https://greenindiateam.com/refund-policy" className="text-decoration-none">
+                <a href="https://greenindiateam.com/refund-policy">
                 Refund Policy
                 </a>
               </li>
                <li>
-                <a href="https://greenindiateam.com/disclaimer" className="text-decoration-none">
+                <a href="https://greenindiateam.com/disclaimer">
                  Disclaimer
                 </a>
               </li>
@@ -198,9 +198,8 @@ const Footer = () => {
       )}
         <hr />
 
-        <p className="small text-center mb-2">
+        <p className=" footer_reserved-key">
           © 2025 Sarv Laxmi Green India Pvt. Ltd. All Rights Reserved.
-          <br />
           CIN: U51909DL2022PTC406952
         </p>
       </div>

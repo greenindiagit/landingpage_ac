@@ -5212,7 +5212,7 @@ Form help
 .accordion-body {
   padding: 0 1rem 1rem;
   font-size: 16px;
-  color: #656B76;
+  /* color: #656B76; */
   border-bottom: 1px solid #EBECED;
 }
 

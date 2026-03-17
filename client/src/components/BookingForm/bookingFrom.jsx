@@ -84,10 +84,10 @@ const handleSubmit = async (e) => {
               className="form-select"
             >
               <option value="">Select Service</option>
-              <option value="AC Repair">AC Repair</option>
               <option value="AC Installation">AC Installation</option>
-              <option value="AC Gas Filling">AC Gas Filling</option>
-              <option value="AC Maintenance">AC Maintenance</option>
+              <option value="AC Uninstallation">AC Uninstallation</option>
+              <option value="AC Service">AC Service</option>
+              <option value="AC Repair">AC Repair & Diagnosis</option>
             </select>
           </div>
 

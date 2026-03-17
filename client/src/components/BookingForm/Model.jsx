@@ -8,7 +8,7 @@ const EnquiryPopup = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowModal(true);
-    }, 30000); // 30000 ms = 30 seconds
+    }, 1000); // 30000 ms = 30 seconds
 
     return () => clearTimeout(timer);
   }, []);

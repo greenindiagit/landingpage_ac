@@ -46,7 +46,9 @@ const Pricing = () => {
                     ))}
                   </ul>
 
-                  <button className="btn btn-primary mt-auto">Book Now</button>
+                  <button className="btn btn-primary mt-auto"
+                   onClick={() => (window.location.href = "https://greenindiateam.com/services/ac-repair-service-delhi-ncr")}
+                  >Book Now</button>
                 </div>
               </div>
             </div>

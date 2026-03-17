@@ -14,6 +14,7 @@ import ContactUs from "../components/contact_us/contact";
 import ServiceBanner from "../components/ServiceBanner/servicebanner";
 import SubService from "../components/sub-service/sub_service";
 import VideoSection from "../components/Youtube/youtubesection";
+import Top_serviceses from "./Top_AC_Service/top_ac_service";
 // src/pages/home.jsx
 
 function Home() {
@@ -31,9 +32,10 @@ function Home() {
       <Testimonials/>
       <ContactUs/>
       <VideoSection/>
-      <Pricing/>
+      {/* <Pricing/> */}
       <FAQ/>
-      <BookingForm/>
+      <Top_serviceses/>
+      {/* <BookingForm/> */}
      <Footer/>
     </div>
   );
