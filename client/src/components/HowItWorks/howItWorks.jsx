@@ -33,7 +33,7 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="how-it-works gradient_howitwork-bg py-5">
+    <section className="how-it-works gradient_howitwork-bg section_py">
       <div className="container">
         <h2 className="text-center mb-3">How It Works</h2>
         <p className="text-center text-secondary mb-4">

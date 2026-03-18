@@ -7280,9 +7280,8 @@ caption {
 }
 
 .table {
-  color: #656B76;
-  border-color: #EBECED;
   margin-block-end: 0;
+  border: 2px solid #28a745;
 }
 
 .table tbody tr {
@@ -7299,16 +7298,19 @@ caption {
   vertical-align: middle;
   font-size: 14px;
   white-space: nowrap;
+   border: 1px solid #28a745; 
 }
 
 .table thead tr {
   border-color: #EBECED;
+   font-weight: 500;
 }
 
 .table thead tr th {
   font-weight: 500;
-  border-color: #EBECED;
+  border-color: #ffff;
   font-size: 14px;
+    background: #00522c;
 }
 
 .table.table-sm> :not(caption)>*>* {
@@ -7977,7 +7979,7 @@ caption {
 }
 
 .table tbody tr td {
-  color: #4E5561;
+  /* color: #4E5561; */
   font-size: 14px;
 }
 
@@ -8031,10 +8033,15 @@ caption {
 
 .table {
   margin: 0;
+  
+}
+.table tbody tr{
+   color: #00522c;
 }
 
 .table tbody tr td {
-  color: #4E5561;
+  color: #000;
+ 
 }
 
 .table tbody tr td .product-img img {
@@ -8109,6 +8116,7 @@ table.table-bordered thead tr th p {
   font-size: 14px;
   border: 0;
   padding: 12px 20px;
+  color: #F0F0F0;
 }
 
 .custom-table table tbody tr td {

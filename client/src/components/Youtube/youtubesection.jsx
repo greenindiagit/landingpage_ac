@@ -2,7 +2,7 @@ import React from "react";
 
 const VideoSection = () => {
   return (
-    <section className="video-section py-5">
+    <section className="video-section py-5 py-md-2">
       <div className="container">
         <div className="row align-items-center ">
           {/* Video Side */}

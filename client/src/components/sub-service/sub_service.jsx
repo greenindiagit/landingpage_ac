@@ -41,7 +41,7 @@ const features = [
 
 const SubService = () => {
   return (
-    <section className="sub-services py-5">
+    <section className="sub-services py-5 py-md-2">
       <div className="container">
         <div className="row g-4 text-center">
           {features.map((feature) => (

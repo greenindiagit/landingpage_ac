@@ -36,7 +36,7 @@ const ContactUs = () => {
   };
 
   return (
-    <section className="gradient_contact_us-bg py-5">
+    <section className="gradient_contact_us-bg section_py">
       <div className="container">
         <div className="row align-items-center">
 

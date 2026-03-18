@@ -33,7 +33,7 @@ const features = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="why-choose-us py-5">
+    <section className="why-choose-us section_py">
       <div className="container">
 
         {/* Section Heading */}

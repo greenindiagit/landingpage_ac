@@ -517,10 +517,80 @@ p.footer_reserved-key {
 }
 /*  */
 .top_services {
-  font-size: 12px;
+  font-size: 14px;
+}
+
+/* mobile view me padding  */
+
+.section_py {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .section_py {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
 }
 
 .main_pading_image {
-  padding: 6px 3px 2px 2px;
-  margin: 28px 2px 2px 2px;
+  padding: 6px 0px 0px 2px;
+  margin: 6px 0px 0px 2px;
+}
+
+.service_in_delhi_ncr {
+  padding: 15px;
+  /* margin: 60px; */
+  display: flex;
+  justify-content: space-between; /* Equal left & right */
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.content_head {
+  line-height: 1.6;
+  text-align: justify;
+  justify-content: space-between;
+}
+.heading_color {
+  color: #00522c;
+}
+.choice_left {
+  text-align: left !important;
+  justify-content: left !important;
+  /* padding-left: -90px; */
+  margin-left: -20px;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse; /* removes gaps */
+  border: 2px solid #28a745;
+  margin: 0;
+}
+
+/* .table th,
+.table td {
+  padding: 12px 16px;
+  font-size: 14px;
+  border: 1px solid #28a745;
+  text-align: left;
+  vertical-align: middle;
+} */
+
+/* Header */
+.table thead th {
+  font-weight: 600;
+  background-color: #f8f9fa;
+}
+
+/* Row border */
+.table tbody tr {
+  border-bottom: 1px solid #ebeced;
+}
+
+/* Remove nowrap issue */
+.table td {
+  white-space: normal;
+  word-break: break-word;
 }

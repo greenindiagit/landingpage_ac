@@ -30,11 +30,11 @@ const faqs = [
 
 const FAQ = () => {
   return (
-    <section className="faq top_services py-2">
+    <section className="faq top_services section_py">
       <div className="container">
-        <div className="row">
+        <div className="row ">
           {/* FAQ Section */}
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6 ">
             <h3 className="mb-3 text-center fw-bold ">Frequently Asked Questions</h3>
 
             <div className="accordion" id="faqAccordion">
@@ -72,11 +72,11 @@ const FAQ = () => {
 
           {/* Service Content */}
           <div className="col-12 col-md-6 mt-4 mt-md-0">
-            <h3 className="mb-3 text-center fw-bold">
+            <h3 className="mb-3 text-center fw-bold heading_color">
               AC Service & Repair in Delhi NCR, India
             </h3>
 
-            <div className="service_in_delhi_ncr justify-content-evenly">
+            <div className="service_in_delhi_ncr">
               <p>
                 Looking for reliable AC Service and Repair in Delhi NCR? Our
                 experienced technicians provide professional servicing for both

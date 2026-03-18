@@ -29,7 +29,7 @@ const achievements = [
 
 const Achievements = () => {
   return (
-    <section className="achievements py-5 ">
+    <section className="achievements section_py">
       <div className="container text-center">
 
         <h2 className="mb-5 fw-bold">Performance highlights</h2>

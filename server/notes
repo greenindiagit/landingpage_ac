@@ -1,0 +1,28 @@
+curl -X POST \
+  https://graph.facebook.com/v25.0/act_<AD_ACCOUNT_ID>/campaigns \
+  -F 'name=My Campaign' \
+  -F 'objective=LINK_CLICKS' \
+  -F 'status=PAUSED' \
+  -F 'access_token=<ACCESS_TOKEN>'
+
+
+  curl -X POST \
+  https://graph.facebook.com/v25.0/act_<AD_ACCOUNT_ID>/adsets \
+  -F 'name=My Ad Set' \
+  -F 'campaign_id=<CAMPAIGN_ID>' \
+  -F 'daily_budget=1000' \
+  -F 'targeting={"geo_locations":{"countries":["US"]}}' \
+  -F 'access_token=<ACCESS_TOKEN>'
+
+
+
+
+  greanindiateam_jhinmun
+  jhinmun111@gmail.com
+jhinmun111@gmail.com
+Jhinmun@1
+
+1919826698895340
+
+
+table-striped
