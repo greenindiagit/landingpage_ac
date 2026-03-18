@@ -682,12 +682,13 @@ const Top_serviceses = () => {
             Team provides a superior experience compared to standard local
             services:
           </p>
+          <div className="table-responsive">
             <table class="table">
               <thead>
-                <tr className="text-center bg_color_table">
-                  <th>Feature</th>
-                  <th>Green India Team Professionals</th>
-                  <th>Local Technicians / Others</th>
+                <tr className="text-center">
+                  <th className="fs-5">Feature</th>
+                  <th className="fs-5">Green India Team Professionals</th>
+                  <th className="fs-5">Local Technicians / Others</th>
                 </tr>
               </thead>
               <tbody>
@@ -770,6 +771,7 @@ const Top_serviceses = () => {
                 </tr>
               </tbody>
             </table>
+          </div>
           </div>
         </div>
     </section>
