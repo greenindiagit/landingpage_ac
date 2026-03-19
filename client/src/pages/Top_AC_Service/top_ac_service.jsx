@@ -705,7 +705,7 @@ const Top_serviceses = () => {
               </thead>
               <tbody>
                 <tr>
-                  <td>Service Warranty</td>
+                  <td className="justify-content-sm-start">Service Warranty</td>
                   <td class="dot-list">
                     30-Day Peace of Mind: We stand by our work with a full
                     month’s guarantee.
