@@ -1,9 +1,9 @@
-import React from "react";
+import { useEffect, useState } from "react";
 
 const services = [
   {
     id: 1,
-    title: "AC Installation",
+    title: "AC Installation",  mobileTitle: "AC Installation",
     description:
       "Professional AC installation service for split & window AC. Safe setup by expert AC technicians.",
     img: "/assets/img/services/AC_Install.jpeg",
@@ -11,7 +11,7 @@ const services = [
   },
   {
     id: 2,
-    title: "AC Uninstallation",
+    title: "AC Uninstallation",  mobileTitle: "AC Uninstallation",
     description:
       "Quick and safe AC uninstallation service for split & window AC without wall damage.",
     img: "/assets/img/services/AC_Uninstall.jpeg",
@@ -20,6 +20,7 @@ const services = [
   {
     id: 3,
     title: "AC Service",
+     mobileTitle: "AC Service",
     description:
       "Expert AC service and cleaning to improve cooling, efficiency, and AC performance.",
     img: "/assets/img/services/AC_service.png",
@@ -28,6 +29,7 @@ const services = [
   {
     id: 4,
     title: "AC Repair & Diagnosis",
+    mobileTitle: "AC Repair",
     description:
       "Fast AC repair service for no cooling, gas leakage, and other AC problems.",
     img: "/assets/img/services/AC_Repair.jpeg",
@@ -36,6 +38,17 @@ const services = [
 ];
 
 const Services = () => {
+   const [isMobile, setIsMobile] = useState(false);
+     useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize(); // initial check
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <section className="services section_py gradient-bg">
       <div className="container">
@@ -58,10 +71,9 @@ const Services = () => {
               </div>
 
               {/* Content outside card */}
-              {/* <h5 className="mt-3 fw-bold"></h5> */}
               <div >
                 <a href={service.link} className=" btn fornt_call">
-                  {service.title}
+                 {isMobile ? service.mobileTitle : service.title}
                 </a>
               </div>
 

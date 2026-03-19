@@ -289,7 +289,7 @@ const Top_serviceses = () => {
               />
             </div>
             <div className="col-12 col-lg-6 ">
-              <h6 className="fw-bold ">
+              <h6 className="fw-bold what_to_expect">
                 What to Expect With Our Gas Refill Service:
               </h6>
               <ul className="list-disc">
@@ -380,23 +380,18 @@ const Top_serviceses = () => {
           </p>
         </div>
         <div className="row mb-3">
-          <div className="col-12 col-lg-6 ">
+        
+
+         
+        </div>
+        <div className="row">
+            <div className="col-12 col-lg-6 mb-4">
             <img
               src="/assets/img/Top_service/uninstallation.jpeg"
               alt="AC Service"
               className="img-fluid"
             />
           </div>
-
-          <div className="col-12 col-lg-6 ">
-            <img
-              src="/assets/img/Top_service/installation.jpeg"
-              alt="AC Service"
-              className="img-fluid"
-            />
-          </div>
-        </div>
-        <div className="row">
           <div className="col-12 col-lg-6">
             <h4 className="fw-bold mb-3">Hassle-Free AC Uninstallation</h4>
             <h6 className="bold ">Our uninstallation service includes:</h6>
@@ -424,7 +419,8 @@ const Top_serviceses = () => {
               </li>
             </ul>
           </div>
-          <div className="col-12 col-lg-6 ">
+          
+            <div className="col-12 col-lg-6 mb-4">
             <h4 className="fw-bold mb-3">
               Professional AC Installation Near You
             </h4>
@@ -455,6 +451,13 @@ const Top_serviceses = () => {
               </li>
             </ul>
           </div>
+             <div className="col-12 col-lg-6 ">
+            <img
+              src="/assets/img/Top_service/installation.jpeg"
+              alt="AC Service"
+              className="img-fluid"
+            />
+            </div>
         </div>
         <div className="mb-5 content_head">
           <h4>Choose Green India Team</h4>

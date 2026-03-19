@@ -9,7 +9,7 @@ const VideoSection = () => {
           <div className="col-lg-6 col-md-12 mb-4">
             <div className="ratio ratio-16x9 rounded overflow-hidden shadow">
               <iframe
-               src="https://www.youtube.com/embed/b5wUj0GpwfQ"
+                src="https://www.youtube.com/embed/b5wUj0GpwfQ"
                 // src="https://www.youtube.com/embed/U-M1oep7kjI"
                 title="AC Repair Service Video"
                 allowFullScreen
@@ -18,35 +18,33 @@ const VideoSection = () => {
           </div>
 
           {/* Content Side */}
-          <div className="col-lg-6 col-md-12  text-lg-start top_services ">
+          <div className="col-lg-6 col-md-12 video_content text-start">
             <h2 className="fw-bold mb-3">AC Service Booking Process</h2>
-            <h6 className="fw-bold">Step 1: Choose Service</h6>
+            <h6>Step 1: Choose Service</h6>
 
-            <p className="text-secondary mb-2">
+            <p className="mb-2">
               Select your AC service: Foam-Jet (Split / Window) – ₹499 (₹200
               OFF)
             </p>
 
-            <h6 className="fw-bold">Step 2: Share Details</h6>
+            <h6>Step 2: Share Details</h6>
 
-            <p className="text-secondary mb-2">
+            <p className="mb-2">
               Send your: Name, Mobile No., Address, AC Type & Preferred Time
             </p>
-            <h6 className="fw-bold">Step 3: Confirmation</h6>
+            <h6>Step 3: Confirmation</h6>
 
-            <p className="text-secondary mb-2">
+            <p className="mb-2">
               Our team will call/WhatsApp to confirm your booking.
             </p>
-            <h6 className="fw-bold">Step 4: Service Visit</h6>
+            <h6>Step 4: Service Visit</h6>
 
-            <p className="text-secondary mb-2">
+            <p className="mb-2">
               Technician will visit & perform Foam-Jet cleaning
             </p>
-            <h6 className="fw-bold"> Step 5: Payment</h6>
+            <h6> Step 5: Payment</h6>
 
-            <p className="text-secondary mb-2">
-              Pay after service (Cash / UPI / Online)
-            </p>
+            <p className="mb-2">Pay after service (Cash / UPI / Online)</p>
 
             {/* <ul className="list-unstyled mb-4">
               <li>✔ Expert Technicians</li>
