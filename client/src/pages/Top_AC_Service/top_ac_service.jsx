@@ -613,7 +613,7 @@ const Top_serviceses = () => {
             </ul>
           </div>
         </div>
-        <div className="row">
+        <div className="row mb-5">
           <div className="col-12 col-lg-6 ">
             <h4 className="fw-bold mb-3">Expert Repair & Gas Solutions</h4>
             <h6 className="fw-bold">1.Same-Day AC Repair (Split/Window)</h6>
@@ -671,6 +671,15 @@ const Top_serviceses = () => {
               </li>
             </ul>
           </div>
+          <div className="col-12 col-lg-6 ">
+            <div className="export_image_gas">
+              <img
+                src="/assets/img/Top_service/Expert.jpeg"
+                alt="AC Service"
+                className="img-fluid"
+              />
+            </div>
+          </div>
         </div>
         <div>
           <h4 className="heading_color fw-bold">
@@ -694,77 +703,77 @@ const Top_serviceses = () => {
               <tbody>
                 <tr>
                   <td>Service Warranty</td>
-                  <td>
+                  <td class="dot-list">
                     30-Day Peace of Mind: We stand by our work with a full
                     month’s guarantee.
                   </td>
-                  <td>
+                  <td class="dot-list">
                     No Guarantee: Once they leave, you are often on your own if
                     issues return.
                   </td>
                 </tr>
                 <tr>
                   <td>Leak Solutions</td>
-                  <td>
+                  <td class="dot-list">
                     Expert Leak Finding & Fixing: We use nitrogen testing and
                     brazing to stop leaks permanently.
                   </td>
-                  <td>
+                  <td class="dot-list">
                     Quick Refills: Most just top up the gas without fixing the
                     leak, leading to more costs later.
                   </td>
                 </tr>
                 <tr>
                   <td>Cleaning Depth</td>
-                  <td>
+                  <td class="dot-list">
                     100% Internal Deep Clean: We clean every hidden corner,
                     including trays and coils.
                   </td>
-                  <td>
+                  <td class="dot-list">
                     Surface Cleaning: Often only the front filters are cleaned,
                     leaving dirt inside.
                   </td>
                 </tr>
                 <tr>
                   <td>Technology</td>
-                  <td>
+                  <td class="dot-list">
                     Eco-Foam & Power Jets: Modern tools that remove microscopic
                     dust safely.
                   </td>
-                  <td>
+                  <td class="dot-list">
                     Manual Brushes: Old-school brushing with water that doesn't
                     reach deep grime.
                   </td>
                 </tr>
                 <tr>
                   <td>Electricity Bills</td>
-                  <td>
+                  <td class="dot-list">
                     Lower Power Consumption: A clean AC runs efficiently and
                     saves you money on bills.
                   </td>
-                  <td>
+                  <td class="dot-list">
                     High Power Usage: Leftover dirt makes the compressor work
                     harder, increasing bills.
                   </td>
                 </tr>
                 <tr>
                   <td>Coil Protection</td>
-                  <td>
+                  <td class="dot-list">
                     Safe & Gentle: Our jet technology protects delicate cooling
                     fins from damage.
                   </td>
-                  <td>
+                  <td class="dot-list">
                     Risk of Damage: Hard brushes often bend the fins,
                     permanently reducing cooling.
                   </td>
                 </tr>
                 <tr>
                   <td>Results Duration</td>
-                  <td>
+                  <td class="dot-list">
                     Long-Lasting Performance: Our deep clean keeps your AC
                     running perfectly for the whole season.
                   </td>
-                  <td>
+                  <td class="dot-list">
                     Short-Term Fix: Since dirt remains, you might need another
                     service in just 1–2 months.
                   </td>
@@ -772,8 +781,54 @@ const Top_serviceses = () => {
               </tbody>
             </table>
           </div>
-          </div>
         </div>
+
+        <div >
+          <h4 className="content_head heading_color fw-bold">Comprehensive AC Solutions by Green India Team</h4>
+          <p>
+            Every machine needs regular care to perform its best, and your air
+            conditioner is no exception. To avoid the stress of a breakdown
+            during the peak of summer, it is essential to get your unit
+            professionally checked before the heatwaves hit. Finding a reliable
+            technician in the middle of a sultry afternoon can be a
+            nightmare—that’s why Green India Team makes it easy to book expert
+            help in minutes.
+          </p>
+          <p>
+            Our professionals work around your schedule, allowing you to choose
+            a time that fits your day perfectly. Here are the primary services
+            we offer to keep your home cool and comfortable:
+          </p>
+          <h6 className="fw-bold">Services Offered by Green India Team</h6>
+          <ul className="list-disc">
+            <li className="content_head">
+              <span className="fw-bold">Deep Wet Servicing:</span>  This is a complete, end-to-end cleaning of
+              your unit. Our professionals extensively wash the cooling coils,
+              condenser coils, outer panels, and drain pipes. Choose this
+              service if you want your AC to look and perform like it’s brand
+              new.
+            </li>
+            <li>
+               <span className="fw-bold">Expert Repairs & Diagnosis:</span> If your AC is making noise or not
+              cooling properly, choose this option. A professional will visit
+              your home to inspect the unit and provide an honest quotation
+              based on the actual condition of the appliance.
+            </li>
+            <li>
+             <span className="fw-bold"> Professional AC Installation:</span>  Setting up a new unit? Our team
+              ensures a perfect installation. We don't just mount the AC; we
+              perform a full post-setup check of gas pressure and cooling
+              performance to make sure everything is running smoothly.
+            </li>
+            <li>
+            <span className="fw-bold">Safe AC Uninstallation:</span>    If you are moving or upgrading, select
+              this option for a clean dismounting of your existing unit. Our
+              professionals check the appliance's health before carefully
+              removing it to ensure it stays in good condition for future use.
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
   );
 };

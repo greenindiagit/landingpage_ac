@@ -37,9 +37,9 @@ function Header() {
         {/* Phone Number */}
         <a
           href="tel:+918090400401"
-          className="fornt_call fw-bold text-dark text-decoration-none d-lg-none"
+          className="fornt_call_mobile fw-bold text-dark text-decoration-none d-lg-none"
         >
-          +91 80904 00401
+          +91 80 90 400 401
         </a>
 
         {/* Mobile Menu */}
@@ -109,8 +109,7 @@ function Header() {
                 Reviews
               </Link>
             </li>
-
-            <li className="nav-item ms-3 fornt_call">+91 80904 00401</li>
+            <li className="nav-item ms-3 fornt_call fw-bold">+91 80 90 400 401</li>
           </ul>
         </div>
       </nav>

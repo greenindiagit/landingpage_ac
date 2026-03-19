@@ -562,5 +562,21 @@ p.footer_reserved-key {
   /* padding-left: -90px; */
   margin-left: -20px;
 }
+.dot-list {
+  padding-left: 15px;
+}
 
+.dot-list::before {
+  content: "• ";
+  color: #191b19;
+  font-size: 16px;
+}
 
+.fornt_call_mobile {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 8px;
+}
+.export_image_gas{
+ padding-top: 70px;
+}

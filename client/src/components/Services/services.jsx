@@ -47,7 +47,7 @@ const Services = () => {
           {services.map((service) => (
             <div key={service.id} className="col-6 col-md-6 col-lg-3">
               {/* Card only for image */}
-              <div className="card service-card border-0 shadow-sm">
+              <div className="card service-card border-0 shadow-sm ">
                 <a href={service.link}>
                   <img
                     src={service.img}
@@ -58,7 +58,12 @@ const Services = () => {
               </div>
 
               {/* Content outside card */}
-              <h5 className="mt-3 fw-bold">{service.title}</h5>
+              {/* <h5 className="mt-3 fw-bold"></h5> */}
+              <div >
+                <a href={service.link} className=" btn fornt_call">
+                  {service.title}
+                </a>
+              </div>
 
               <p className="text-secondary small justify-content-start">
                 {service.description}

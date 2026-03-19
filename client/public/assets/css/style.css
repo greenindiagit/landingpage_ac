@@ -7373,10 +7373,10 @@ caption {
   /* padding: 12px 20px; */
   padding: 6px 10px !important;
   vertical-align: middle;
-  font-size: 14px !important;
+  font-size: 12px !important;
   white-space: nowrap;
-  border: 1px  #28a745 !important;
-  /* border: 1px solid #28a745; */
+  /* border: 1px  #28a745 !important; */
+  border: 1px solid #28a745;
 }
 
 .table thead tr {
@@ -7386,10 +7386,10 @@ caption {
 
 .table thead tr th {
   font-weight: 500;
-  /* border-color: #ffff; */
+  border-color: #ffff;
   font-size: 14px;
-  /* background: #00522c; */
-  background: linear-gradient(45deg, #00522c, #2a64439e);
+  background: #00522c;
+  /* background: linear-gradient(45deg, #00522c, #2a64439e); */
   color: #ffffff;
 }
 
@@ -8123,7 +8123,7 @@ caption {
 
 .table tbody tr td {
   color: #000;
- background: linear-gradient(to right, #77977d, #ffffff);
+ /* background: linear-gradient(to right, #77977d, #ffffff); */
 }
 
 .table tbody tr td .product-img img {
